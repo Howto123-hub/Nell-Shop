@@ -201,11 +201,11 @@ img.product-image {
 
  @media only screen and (max-width: 768px) {
     img.product-image {
-        width: 180px;
+        width: 150px;
     
     }
     .item {
-        max-width: 180px ;
+        max-width: 150px ;
         
     }
  }
