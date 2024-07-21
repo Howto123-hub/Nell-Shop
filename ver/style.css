@@ -151,7 +151,7 @@ box-shadow: 0px -1px 24px 11px rgba(0,0,0,0.23);
     
 }
 .item {
-    max-width: 180px ;
+    max-width: 190px ;
     background-color: #F8F8F8;
     -webkit-box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.14);
 -moz-box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.14);
@@ -177,7 +177,7 @@ span.product-price {
 }
 
 img.product-image {
-    width: 180px;
+    width: 190px;
     height: 200px;
     object-fit: cover;
 
