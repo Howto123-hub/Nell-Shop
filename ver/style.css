@@ -31,6 +31,15 @@ box-shadow: 0px -1px 24px 11px rgba(0,0,0,0.23);
     width: 100%;
     height: 50%;
 }
+.gradient2 {
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 25, 0));
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 50%;
+}
 .navigation-bar input {
     all: unset;
     background-color: white;
@@ -114,10 +123,27 @@ box-shadow: 0px -1px 24px 11px rgba(0,0,0,0.23);
     object-fit: cover;
 
 }
+.head-img2 img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    margin-top: 75px;
+    object-fit: cover;
+
+}
+.head-img2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 500px;
+    
+}
+
 .head-img {
     display: flex;
     justify-content: center;
     position: relative;
+    
 }
 .head-img span {
     position: absolute;
@@ -151,6 +177,7 @@ box-shadow: 0px -1px 24px 11px rgba(0,0,0,0.23);
     
 }
 .item {
+    margin: 12px;
     max-width: 200px ;
     background-color: #F8F8F8;
     -webkit-box-shadow: 0px -1px 11px 1px rgba(0,0,0,0.14);
@@ -195,9 +222,116 @@ img.product-image {
  .items-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: start;
+    padding: 12px;
     width: 100%;
  }
+
+ /* Sc */
+ .make-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .item-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    
+    
+ }
+ .item-div2 p:nth-child(1) {
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 0;
+    font-size: 22px;
+ }
+ .item-div2 p:nth-child(2) {
+    margin: 0;
+    padding-left: 12px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+ }
+ .buttons-item {
+    display: flex;
+    align-items: center;
+ }
+ .buttons-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    padding-left: 12px;
+ }
+ .buttons-item p:nth-child(2) {
+    padding: 0;
+    font-size: 15px;
+    margin-right: 5px;
+ } 
+ .scroll-container {
+    border-radius: 10px;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    scroll-snap-type: x mandatory; /* Snap only on horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    width: 100%; /* Container width */
+    white-space: nowrap;
+    max-width: 500px;
+    height: 100%;
+    max-height: 600px;
+
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start; /* Snap items to the start */
+    margin-right: 10px; /* Space between items */
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    
+}
+
+.scroll-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 600px;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    color: #e7d000;
+    padding-bottom: 10px;
+}
+.rating-count {
+    margin-left: 0px;
+    color: #666;
+    font-size: 14px;
+}
+.add-to {
+    margin-bottom: 10px;
+    margin-left: 12px;
+    text-align: center;
+    background-color: #dfdfdf;
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    
+
+}
+.more-like {
+    text-align: left;
+    padding-left: 22px;
+}
+
 
  @media only screen and (max-width: 768px) {
     img.product-image {
@@ -208,4 +342,39 @@ img.product-image {
         max-width: 170px ;
         
     }
+    .make-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .item-div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+     }
+     .scroll-container {
+        width: 100%; /* Container width */
+        
+    }
+    .scroll-container img {
+        object-fit: cover;
+    }
+    .items-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0px;
+        width: 100%;
+     }
+     .item {
+        margin: 0px;
+        
+        
+    }
+    .more-like {
+        text-align: center;
+        padding-left: 0px;
+    }
+    
  }
